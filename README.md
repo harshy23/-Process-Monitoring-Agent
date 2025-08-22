@@ -57,35 +57,20 @@ This project consists of three main components:
 ---
 
 ## 2. Configuration
-- **CORS**: Ensure `django-cors-headers` is installed and configured in `BackendPro/settings.py`:
-  ```python
-  INSTALLED_APPS = [
-      ...
       'corsheaders',
-      ...
   ]
-  MIDDLEWARE = [
-      'corsheaders.middleware.CorsMiddleware',
-      ...
-  ]
+
   CORS_ALLOWED_ORIGINS = [
+
       "https://process-monitoring-agent-2.onrender.com",
-  ]
-  ```
+
 - **Database**: Uses SQLite by default (`BackendPro/db.sqlite3`).
-- **API URLs**: Backend API endpoints are under `/api/`.
 
 ---
 
-## 3. Architecture Overview
 - **Agent**: Collects system/process info and sends it to the backend API.
-- **BackendPro**: Django REST API for storing and serving system/process data.
-- **FrontendPro**: Fetches and displays data from the backend API for users.
 
----
 
-## 4. API Specifications
-- `GET /api/system-info/` — Returns system information.
 - `GET /api/process-data-view/` — Returns process data.
 - `POST /api/process-data-view/` — Accepts process data from agent.
 
