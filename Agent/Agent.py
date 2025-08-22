@@ -7,7 +7,7 @@ import requests
 import json
 from datetime import datetime
 API_KEY = "hf4n6h894m964f5gm9kdfm"
-BACKEND_URL = "https://process-monitoring-agent-1.onrender.com"
+BACKEND_URL = "https://process-monitoring-agent-1.onrender.com/api/process-data/"
 def collect_task():
     process = []
 
