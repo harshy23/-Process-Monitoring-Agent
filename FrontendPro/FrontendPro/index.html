@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Process Monitor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="name-pannel">
+      <p id="host-name">Name</p>
+      <p id="host-meta">Timestamp</p>
+    </div>
+    <div class="option">
+      <p class="system">System Details</p>
+      <p class="process">Process Details</p>
+      <button id="refresh">Refresh</button>
+    </div>
+    <div class="tabel-content">
+      <div class="systems">
+        <!-- System info will go here -->
+      </div>
+      <div class="processes">
+        <input
+  type="text"
+  id="process-search"
+  placeholder="Search name or PID..."
+  style="margin-bottom:10px; width: 230px; padding: 5px; font-size: 14px;"
+/>
+
+        <table cellpadding="5" id="process-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>PID</th>
+              <th>CPU</th>
+              <th>Memory</th>
+              <th>PPID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JS will populate processes here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

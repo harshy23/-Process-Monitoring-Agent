@@ -1,0 +1,115 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar (left panel) */
+.name-pannel {
+  
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  width: 10rem;
+  height: auto;
+}
+.name-pannel p{
+background: #e74c3c; 
+margin: 10px 0;
+  padding: 8px;
+  
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  font-size: small;
+}
+
+.option {
+  background: #f4f4f4;
+  padding: 10px;
+  min-width: 180px;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+
+.option p {
+  margin: 10px 0;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.option p:hover {
+  background: #ddd;
+}
+
+/* Main content */
+.tabel-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* System info table */
+.system p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* Process table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th {
+  background: #2c3e50;
+  color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+table td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  font-size: 14px;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table tr:hover {
+  background: #f1f1f1;
+}
+.toggle {
+  cursor: pointer;
+  font-weight: bold;
+  color: #2980b9;
+  user-select: none;
+}
+.children-row {
+  display: none; /* hide child rows by default; show on expand */
+}
+.indent {
+  padding-left: 2em; /* adjust for more or less indentation */
+}
+
+.systems{
+  display: none;
+}
+
+.processes{
+  display: none;
+}
