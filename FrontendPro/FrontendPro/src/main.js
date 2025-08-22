@@ -12,8 +12,8 @@ document.querySelector(".process").addEventListener("click", () => {
   document.querySelector(".processes").style.display = "block";
 });
 
-const API_URL = 'http://127.0.0.1:8000/api/process-data-view/'; 
-const SYSTEM_URL = 'http://127.0.0.1:8000/api/system-info/';     
+const API_URL = 'https://process-monitoring-agent-1.onrender.com/api/process-data-view/'; 
+const SYSTEM_URL = 'https://process-monitoring-agent-1.onrender.com/api/system-info/';     
 let processSearch = "";
 
 // ---------------- Processes ----------------
