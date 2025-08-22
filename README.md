@@ -92,11 +92,34 @@ This project consists of three main components:
 ---
 
 ## 5. Assumptions
-- The agent and backend are deployed separately; agent posts data to backend API.
-- Frontend and backend may be on different domains; CORS must be enabled.
-- SQLite is used for development.
-- All API endpoints are prefixed with `/api/`.
+  - The agent and backend are deployed separately; agent posts data to backend API.
+  - Frontend and backend may be on different domains; CORS must be enabled.
+  - SQLite is used for development.
+  - All API endpoints are prefixed with `/api/`.
 
+## 6. How to Use (For Normal Users)
+
+### Accessing the Dashboard
+- Open your web browser and go to the deployed frontend URL (e.g., `https://process-monitoring-agent-2.onrender.com`).
+- You will see a dashboard displaying system and process information collected from the agent.
+
+### Viewing System and Process Data
+- The dashboard automatically fetches and displays the latest data from the backend API.
+- You can refresh the page to get updated information.
+
+### Running the Agent
+- Download the agent executable from your administrator or from the `Agent/dist/Agent.exe` location.
+- Double-click the executable to start the agent. It will run in the background and send system/process data to the backend server.
+
+### Troubleshooting
+- If you do not see any data, ensure the agent is running and the backend server is online.
+- For any issues, contact your system administrator.
+
+<!-- ## 7. Useful Links
+- [Django Documentation](https://docs.djangoproject.com/)
+- [Vite Documentation](https://vitejs.dev/)
+- [PyInstaller Documentation](https://pyinstaller.org/)
+- [django-cors-headers](https://github.com/adamchainz/django-cors-headers) -->
 ---
 
 <!-- ## 6. Useful Links
