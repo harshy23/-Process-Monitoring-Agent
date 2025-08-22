@@ -94,13 +94,13 @@ This project consists of three main components:
 ## 5. Assumptions
 - The agent and backend are deployed separately; agent posts data to backend API.
 - Frontend and backend may be on different domains; CORS must be enabled.
-- SQLite is used for development; switch to PostgreSQL for production if needed.
+- SQLite is used for development.
 - All API endpoints are prefixed with `/api/`.
 
 ---
 
-## 6. Useful Links
+<!-- ## 6. Useful Links
 - [Django Documentation](https://docs.djangoproject.com/)
 - [Vite Documentation](https://vitejs.dev/)
 - [PyInstaller Documentation](https://pyinstaller.org/)
-- [django-cors-headers](https://github.com/adamchainz/django-cors-headers)
+- [django-cors-headers](https://github.com/adamchainz/django-cors-headers) -->
